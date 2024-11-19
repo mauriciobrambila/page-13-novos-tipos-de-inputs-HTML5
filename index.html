@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Formulario de cadastro</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+         
+         <center>
+		 <h2>Novos inputs no HTML 5</h2>
+		 </center>
+		 <br>
+		 <center>
+         <p>&emsp; &emsp; &emsp; Neste artigo vamos tratar sobre HTM5 e os novos input types que surgiram com ela.</p>
+		 <p>&emsp; &emsp; &emsp; Agora assim não precisamos mais criar validações em JavaScript para campos numéricos, e-mails, datas,</p> 
+		 <p>&emsp; &emsp; entre outros que estaremos vendo ao decorrer do artigo,foram adicionados mais 13 novos tipos de inputs à HTML5,
+		 <p>&emsp;porém como sempre temos problemas de compatibilidade.</p> 
+         <p>&emsp;Nem todos os navegadores suportam todos os novos input types.</p>
+		 <p>Entretanto podemos começar a usá-los,</p> 
+         <p>se por acaso eles não forem suportados, irão se comportar como um campo de texto comum.</p>
+        <p>&emsp; &emsp; &emsp; &emsp; &emsp; Ao todo temos 23 valores possíveis para o atributo type dos inputs, incluindo os que já existiam e mais os treze novos que surgiram com o HTML5.</p>
+        <br>
+        <h3>Segue abaixo uma relação com os tipos de input novos:</h3>       
+        <br>
+        <p>Input Type,  Input type = Color, Input type = Date, Input type = Datetime</p>
+        <p>Input type = Month, Input type = DateTime-Local, Input type = E-mail</p>
+        <p>Input type = Number, Input type = Range, Input type = Search</p>
+        <p>Input type = Tel, Input type = Time, Input type = Url</p>
+        <p>Input type = week</p>
+		<br>
+		<h3> E abaixo temos um modelo de formulario em HTML</h3>
+		</center>
+		<br>
+		
+   <div class="registroformulario"><h1>Formulário de cadastro</h1></div>
+    
+   <div class="conteudo">
+   
+      <form>
+	  
+	      <div id="nome">
+		  
+		  <h2 class="nome">Nome e Sobrenome</h2>
+		  <input class="primeironome" type="text" name="primeiro_nome" required="required" type="text" placeholder="nome">
+		  <label class="primeirolabel" > Nome </label>
+		  <input class="sobrenome" type="text" name="sobre_nome" required="required" type="text" placeholder="sobrenome">
+		  <label class="sobrenomelabel">Sobrenome</label>
+    
+		</div>
+        
+        <h2 class="nome">Universidade</h2>
+		<input class="empresa" type="text" name="empresa" placeholder="Unoeste-Universidade do Oeste Paulista">
+		
+		<h2 class="nome">Email</h2>
+		<input class="email" type="text" name="email" required="required" type="text" placeholder="contato@unoeste.br">
+		
+		
+		<h2 class="nome">Fone / DDD</h2>
+		<input class="codigo" type="text" name="codigo_area" required="required" type="text" placeholder="18">
+		<label class="codigo_area">DDD</label>
+		<input class="number" type="text" name="phone" required="required" type="text" placeholder="  0000-0000">
+		<label class="numero-telefone">Telefone</label>
+		
+		
+		<h2 class="nome">Cidade</h2>
+		<br>
+		<h2 class="nome">Sexo</h2>
+		
+		<select class="opcoes" name="assunto">
+		   
+		    <option disabled="disabled" selected="selected">Selecione a opção</option>
+			<option>Masculino</option>
+			<option>Feminino</option>
+			
+		</select>
+		
+		<select class="escolha" name="cidade">
+		
+		    <option disabled="disabled" selected="selected">Selecione a cidade</option>
+			<option>Presidente Prudente</option>
+			<option>São Paulo</option>
+			<option>Tarabai</option>
+			<option>Pirapozinho</option>
+			<option>Alvares Machado</option>
+			<option>Santo Expedito</option>
+			<option>Assis</option>
+			<option>Londrina</option>
+			
+			</select>
+			
+	
+		<h2 class="nivel"> Voce é iniciante ou ja é aluno?</h2>
+		
+		
+		<label class="radio">
+		
+		    <input class="radio-one" type="radio" name="radio" checked="checked" name="">
+			<span class="checkmarK"></span>
+			
+			Sim
+			
+		</label>
+		
+		
+		<label class="radio">
+		
+		    <input class="radio-two" type="radio" name="radio" checked="checked" name="">
+			<span class="checkmarK"></span>
+			
+			Não
+			
+		</label> 
+		
+		<label class="horns">
+		
+		<h6><input type="checkbox" id="horns" name="horns"> Eu li e concordo com estes termos e condiçoes</h6>
+		
+		</label>
+		
+		<button type="submit"> Enviar</button>
+		
+		
+		
+	</form>
+	
+	
+	
+    </div>
+		  
